@@ -1,3 +1,2 @@
 streamlit
-opènai
-pandas
+openai
