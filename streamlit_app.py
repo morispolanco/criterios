@@ -48,6 +48,6 @@ if archivo_ensayo is not None:
         if puntuacion is not None:
             st.write(f'La puntuación del ensayo es: {puntuacion}')
         else:
-            st.write('GPT-3 no pudo generar una puntuación válida. Intente nuevamente.')
+            st.write('GPT-3 no pudo generar una puntuación válida. Intente nuevamente.') 
 
        
