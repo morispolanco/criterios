@@ -1,9 +1,14 @@
 import streamlit as st
 import openai
 import os
+from dotenv import load_dotenv
 
-# Reemplace 'your_openai_api_key' con su clave API de OpenAI
-openai.api_key = env
+# Carga las variables de entorno desde el archivo .env
+load_dotenv()
+
+# Asigna la clave API de OpenAI
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+
 
 def generar_puntuacion_gpt3(texto_ensayo, criterios):
     prompt = f'Evaluar el siguiente ensayo basado en los criterios: {", ".join(criterios)}.\n\nEnsayo:\n{texto_ensayo}\nPuntuación: '
