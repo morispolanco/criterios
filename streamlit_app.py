@@ -45,5 +45,5 @@ if archivo_ensayo is not None:
         else:
             st.write('GPT-3 no pudo generar una puntuación válida. Intente nuevamente.')
 
-else:
-    st.write('Por favor, cargue su ensayo antes de continuar.')
+        else:
+            st.write('Por favor, cargue su ensayo antes de continuar.')
