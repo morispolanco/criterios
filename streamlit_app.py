@@ -3,7 +3,7 @@ import openai
 import os
 
 # Reemplace 'your_openai_api_key' con su clave API de OpenAI
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = .env
 
 def generar_puntuacion_gpt3(texto_ensayo, criterios):
     prompt = f'Evaluar el siguiente ensayo basado en los criterios: {", ".join(criterios)}.\n\nEnsayo:\n{texto_ensayo}\nPuntuación: '
